@@ -18,7 +18,7 @@ import com.example.demo.service.Studentservice;
 public class Studentcontroller {
 	@Autowired
 	Studentservice sc;
-	@PostMapping("student")
+	@PostMapping("Student")
 String addstudent(Student s) {
 		
 		sc.savedata(s);
