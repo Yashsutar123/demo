@@ -18,14 +18,14 @@ import com.example.demo.service.Studentservice;
 public class Studentcontroller {
 	@Autowired
 	Studentservice sc;
-	@PostMapping("student")
+	@PostMapping("Student")
 String addstudent(Student s) {
 		
 		sc.savedata(s);
 	return "student saved";
 }
 
-@PostMapping("students")
+@PostMapping("studentss")
 String saveall(List<Student>l) {
 	sc.saveall(l);
 	return "all saved";
