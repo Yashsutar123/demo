@@ -25,7 +25,7 @@ String addstudent(Student s) {
 	return "student saved";
 }
 
-@PostMapping("students")
+@PostMapping("studentss")
 String saveall(List<Student>l) {
 	sc.saveall(l);
 	return "all saved";
